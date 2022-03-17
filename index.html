@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>tic-tac-toe</title>
+</head>
+<body>
+<main>
+    <div class="wrapper">
+    <h1>tic-tac-toe</h1>
+    <section id="main_head">
+        <div class="info">
+            <nav>
+                <h4>Выберите поле</h4>
+                <ul class="scale">
+                    <li><button value="3" class="restart field">3 x 3</button></li>
+                    <li><button value="4" class="restart field">4 x 4</button></li>
+
+                </ul>
+                <div class="scale">
+                    <button id="restart" class="restart">Переиграть</button>
+                    <button id="restart_all" class="restart">Переиграть все</button>
+                </div>
+            </nav>
+            <table>
+                <tr>
+                    <th>Побед</th>
+                    <th>Победили</th>
+                </tr>
+                <tr>
+                    <td id="xWin">0</td>
+                    <td>Крестики</td>
+                </tr>
+                <tr>
+                    <td id="oWin">0</td>
+                    <td>Нолики</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+    <section id="allBox">
+    </section>
+    <div class="modal">
+        <div class="overlay"></div>
+        <div class="modalWindow">
+            <h3>Победитель</h3>
+            <h3>Так держать!</h3>
+            <div class="close">Close</div>
+        </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-data">
+                <p class="copyright">©</p>
+                <p class="year">2022</p>
+                <a class="github-username" href="https://github.com/egorRasolko">github</a>
+            </div>
+            <a class="rss-logo" href="https://rs.school/js-stage0/"></a>
+        </div>
+    </footer>
+</main>
+<script src="Main.js"></script>
+</body>
+</html>
